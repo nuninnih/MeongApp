@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register Form</h1>
+    <form action="/editProfile" method="post">
+        Email <br>
+        <input type="email" name="email" value="<%= user.email %>"><br><br>
+        Username <br>
+        <input type="text" name="username" value="<%= user.username %>"><br><br>
+        Phone Number <br>
+        <input type="text" name="phone" value="<%= user.phone %>"><br><br>
+        Name <br>
+        <input type="text" name="fullName" value="<%= user.Profile.fullName %>"><br><br>
+        Gender <br>
+        <input type="radio" name="gender" value="Male" <%= user.Profile.gender === 'Male' ? 'checked' : '' %>>Male<br>
+        <input type="radio" name="gender" value="Female" <%= user.Profile.gender === 'Female' ? 'checked' : '' %>>Female<br><br>
+        Location <br>
+        <input type="text" name="location" value="<%= user.Profile.location %>"><br><br>
+        Date Of Birth <br>
+        <input type="date" name="dateOfBirth" value="<%= user.Profile.formatBirthDate() %>"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

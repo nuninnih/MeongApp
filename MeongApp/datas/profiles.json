@@ -1,0 +1,82 @@
+[
+    {
+      "id": 1,
+      "fullName": "Ursuline Beyne",
+      "gender": "Female",
+      "location": "China",
+      "dateOfBirth": "10-10-2021",
+      "UserId" : 1
+    },
+    {
+      "id": 2,
+      "fullName": "Cyndi Messham",
+      "gender": "Female",
+      "location": "China",
+      "dateOfBirth": "02-01-2017",
+      "UserId" : 2
+    },
+    {
+      "id": 3,
+      "fullName": "Leoline Rushmere",
+      "gender": "Female",
+      "location": "Czech Republic",
+      "dateOfBirth": "19-01-2018",
+      "UserId" : 3
+    },
+    {
+      "id": 4,
+      "fullName": "Kerry Spoors",
+      "gender": "Male",
+      "location": "Poland",
+      "dateOfBirth": "13-01-2019",
+      "UserId" : 4
+    },
+    {
+      "id": 5,
+      "fullName": "Erina Twidell",
+      "gender": "Female",
+      "location": "Honduras",
+      "dateOfBirth": "04-04-2020",
+      "UserId" : 5
+    },
+    {
+      "id": 6,
+      "fullName": "Colman Jiroudek",
+      "gender": "Male",
+      "location": "France",
+      "dateOfBirth": "02-01-2021",
+      "UserId" : 6
+    },
+    {
+      "id": 7,
+      "fullName": "Kirstyn McMoyer",
+      "gender": "Female",
+      "location": "Philippines",
+      "dateOfBirth": "20-01-2022",
+      "UserId" : 7
+    },
+    {
+      "id": 8,
+      "fullName": "Corbie Berrisford",
+      "gender": "Male",
+      "location": "Brazil",
+      "dateOfBirth": "12-05-2022",
+      "UserId" : 8
+    },
+    {
+      "id": 9,
+      "fullName": "Chelsey Tenwick",
+      "gender": "Female",
+      "location": "Russia",
+      "dateOfBirth": "13-03-2015",
+      "UserId" : 9
+    },
+    {
+      "id": 10,
+      "fullName": "Amabel Riquet",
+      "gender": "Female",
+      "location": "China",
+      "dateOfBirth": "08-07-2019",
+      "UserId" : 10
+    }
+  ]
