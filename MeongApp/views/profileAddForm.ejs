@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register Form</h1>
+    <form action="/regProfile" method="post">
+        Email <br>
+        <input type="email" name="email" value="<%= user.email %>" readonly><br><br>
+        Username <br>
+        <input type="text" name="username" value="<%= user.username %>" readonly><br><br>
+        Phone Number <br>
+        <input type="text" name="phone"><br><br>
+        Name <br>
+        <input type="text" name="fullName"><br><br>
+        Gender <br>
+        <input type="radio" name="gender" value="Male">Male<br>
+        <input type="radio" name="gender" value="Female">FeMale<br><br>
+        Location <br>
+        <input type="text" name="location"><br><br>
+        Date Of Birth <br>
+        <input type="date" name="dateOfBirth"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

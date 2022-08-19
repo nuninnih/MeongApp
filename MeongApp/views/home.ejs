@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <a href='/profile'>Profile</a>
+    <a href='/logout'>Logout</a><br><br>
+    <!-- INPUT FORM FOR POST -->
+    <form action="/home" method="post">
+        <textarea name="post" cols="40" rows="10" placeholder="ngeonglah disini"></textarea>
+        <input type="submit" value="Ngeong">
+    </form>
+    <!-- END FORM POST -->
+    <!-- VIEW POST -->
+    <button onclick="window.location.href=`/home?sort=like`">Sort by like</button><br><br>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>User Name</th>
+            <th>Created Date</th>
+            <th>Post</th>
+            <th>Like</th>
+            <th>Action</th>
+        </tr>
+        <% post.forEach(el => { %>
+            <tr>
+                <td><%= el.User.Profile.fullName %></td>
+                <td><%= el.User.username %></td>
+                <td><%= dateFormat(el.createdAt) %></td>
+                <td><%= el.post %></td>
+                <td><%= el.like %></td>
+                <td><button onclick="window.location.href='/post/<%= el.id %>/like'">Like</button>
+                    <% if(el.UserId === userId){ %> 
+                    <button onclick="window.location.href='/post/<%= el.id %>/delete'">Delete</button>
+                    <% } %> 
+                </td>
+            </tr>
+        <% }) %> 
+    </table>
+    <!-- END VIEW POST -->
+    
+</body>
+</html>

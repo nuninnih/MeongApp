@@ -1,0 +1,20 @@
+ALERT 
+- s: di posts.json aku ilangin createdAt nya (bukannya createdAt udah otomatis ya? mksdnya postedAt gitu ga si?)
+- n : iya bener Shan, jadinya gausah aja
+- s: di users.json aku ga ngerti maksudnya role, isiin kak
+- n : gausah dulu. Aku mikir gausah pake tapi kok diwajibin. Gpp, ntar diisi user atau admin gitu aja
+
+
+NOTES
+-
+-
+-
+
+
+
+TO DO
+- n to s => 1. bikino halaman index yang isinya menerangkan tentang aplikasi kita
+- n to s  => 2. buat login page lucu, yang ada pilihannya kalo belom punya akun ya signup dulu
+- n to s  => 3. buat halaman signup User (pake properti tabel User, yang form profile ntar aja kalo udah bisa login)
+-
+-

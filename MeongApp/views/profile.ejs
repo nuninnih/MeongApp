@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+</head>
+<body>
+    <a href='/home'>Home</a>
+    <a href='/logout'>Logout</a><br><br>
+    <!-- PROFILE -->
+    <a href="/editProfile">Edit Profile</a><br>
+    <%= profile.fullName %><br>
+    @<%= profile.User.username %><br><br>
+
+    born <%= profile.formatBirthDate() %><br>
+    join <%= profile.createdAt.getMonth()+1 %> <%= profile.createdAt.getFullYear() %><br><br>
+    <!-- END PROFILE -->
+    <!-- SEARCH -->
+    <form action="" method="get">
+        <input type="text" width="400px" name="search">
+        <input type="submit" value="Search">
+    </form>
+    <!-- END SEARCH -->
+    <!-- VIEW POST -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>User Name</th>
+            <th>Created Date</th>
+            <th>Post</th>
+            <th>Like</th>
+            <th>Action</th>
+        </tr>
+        <% profile.User.Posts.forEach(el => { %>
+            <tr>
+                <td><%= profile.fullName %></td>
+                <td><%= profile.User.username %></td>
+                <td><%= dateFormat(el.createdAt) %></td>
+                <td><%= el.post %></td>
+                <td><%= el.like %></td>
+                <td><button onclick="window.location.href='/post/<%= el.id %>/like'">Like</button>
+                    <button onclick="window.location.href='/post/<%= el.id %>/delete'">Delete</button>
+                </td>
+            </tr>
+        <% }) %> 
+    </table>
+    <!-- END VIEW POST -->
+</body>
+</html>
